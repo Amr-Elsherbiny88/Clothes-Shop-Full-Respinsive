@@ -113,9 +113,9 @@
     overflow: hidden;
 }
 
+
 .card:hover{
-    filter: brightness(75%);
-    scale: 1.1;
+    filter: brightness(87%);
    transition: 0.7s;
 }
 
