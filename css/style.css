@@ -12,10 +12,12 @@
 
 .nav-ic .fa-solid {
     color: grey;
+    scale: 0.9;
     
 }
 
 .nav1 {
+
     box-shadow:  0px 5px 10px 0px;
 
 }
