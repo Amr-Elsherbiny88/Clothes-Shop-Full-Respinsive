@@ -120,8 +120,8 @@
 .card {
     background-color: rgb(44, 44, 44);
     color: white;
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
+    margin-right: -20px;
 }
 
 
