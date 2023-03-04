@@ -155,4 +155,8 @@
     .text .fh{
         margin-top: -1px;
     }
+
+    .carousel-item img {
+        scale: 0.7;
+    }
 }
