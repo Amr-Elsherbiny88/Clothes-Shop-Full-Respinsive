@@ -7,19 +7,69 @@
   
 }
 
+
+
+
+
+
+
+
+
+
+/* loading page start */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(51, 0, 51);
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 9999;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid rgb(0, 217, 255);
+    border-top-color: purple;
+    border-radius: 25%;
+    animation: loading 1s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  /* loading page end */
+
+
 /* nav start */
 
 
 .nav-ic .fa-solid {
-    color: grey;
+    
     scale: 0.9;
     
 }
 
 .nav1 {
 
-    box-shadow:  0px 5px 10px 0px;
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
 }
 /* nav end */
 
@@ -107,33 +157,108 @@
 
 
 /* collections start */
-.card  {
+.card1 {
     filter: brightness(50%);
     transform: all;
     overflow: hidden;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 
-.card:hover{
+.card1:hover{
     filter: brightness(87%);
-   transition: 0.7s;
+   transition: 1s;
+   box-shadow:0px 0px 0px 0px ;
 }
 
-.card {
+.card1 {
     background-color: rgb(44, 44, 44);
     color: white;
    
    
 }
 
+.collections{
+    border-bottom: solid;
+    border-color: rgb(182, 182, 182);
+    
+}
+/* collections end */
 
 
 
 
+/* featured products start */
+
+.title-1 h1 {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+.featured {
+    
+
+    border-bottom: solid;
+    border-color: rgb(182, 182, 182);
+
+}
+
+.feat-card{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    filter: brightness(50%);
+    transform: all;
+}
+
+
+.feat-card:hover{
+    filter: brightness(87%);
+    box-shadow:0px 0px 0px 0px ;
+   transition: 1s;
+}
+
+.feat-card h3 {
+    color: purple;
+    
+}
+
+.feat-card p {
+    color: purple;
+}
+
+.mr{
+    margin-bottom: 23px;
+}
+
+/* featured products end */
 
 
 
+/* sale start */
 
+.sale-dt h1 {
+    color: purple;
+}
+
+.sale-dt span{
+    color: purple;
+}
+
+.sale-dt button {
+    background-color: purple;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: white;
+    transform: all;
+}
+
+.sale-dt button:hover {
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+
+/* sale end */
 
 
 

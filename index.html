@@ -26,10 +26,20 @@
     <!-- link aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
+
+
+
+    
+<!-- loading page start -->
+<div class="loader"></div>
+<!-- loading page end -->
+
    
     <!-- navbar start -->
 
@@ -37,7 +47,7 @@
       <div class="row">
        
 
-        <nav class="navbar navbar-light bg-light nav1">
+        <nav class="navbar navbar-dark bg-dark nav1">
           <form class="container-fluid justify-content-start">
             <button class="btn btn-outline-success me-2" type="button">Home</button>
             <button class="btn btn-sm btn-outline-secondary" type="button">About</button>
@@ -49,7 +59,7 @@
             <i class="fa-solid fa-user"></i>
             <i class="fa-regular fa-heart fa-solid"></i>
             <i class="fa-solid fa-cart-shopping"></i>
-           
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
           </a>
           </form>
 
@@ -110,12 +120,12 @@
 
 
           <div data-aos="fade-down" class="col-xl-4 col-md-4 col-lg-4  mb-3 ">
-           <div class="text1 col-xl-12 col-md-12 col-lg-12 col-sm-12 ">
+           <div class="text1 h31 col-xl-12 col-md-12 col-lg-12 col-sm-12 ">
             <i class="fa-solid fa-truck"></i>
             <h3>FREE SHIPPING</h3>
            </div>
 
-           <div class="text2 col-xl-12 col-md-12 col-lg-12  ">
+           <div class="text2 col-xl-12 col-md-12 col-lg-12 p11 ">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa provident quibusdam id quam sit quisquam rem pariatur! Saepe veniam deleniti est tempora maxime, quam dolor esse temporibus natus dolores!</p>
            </div>
 
@@ -123,24 +133,24 @@
           
 
           <div data-aos="fade-down" class="col-xl-4 col-md-4 col-lg-4 col-sm-4 mb-3">
-            <div class="text1 col-xl-12 col-md-12 col-lg-12 ">
+            <div class="text1 h32 col-xl-12 col-md-12 col-lg-12 ">
               <i class="fa-solid fa-arrow-rotate-left"></i>
              <h3>FREE RETURNS</h3>
             </div>
             
-           <div class="text2 col-xl-12 col-md-12 col-lg-12 ">
+           <div class="text2 col-xl-12 col-md-12 col-lg-12 p21">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa provident quibusdam id quam sit quisquam rem pariatur! Saepe veniam deleniti est tempora maxime, quam dolor esse temporibus natus dolores!</p>
            </div>
 
            </div>
 
           <div data-aos="fade-down" class="col-xl-4 col-md-4 col-lg-4  mb-3">
-            <div class="text1 col-xl-12 col-md-12 col-lg-12 col-sm-12">
+            <div class="text1 h33 col-xl-12 col-md-12 col-lg-12 col-sm-12">
               <i class="fa-solid fa-question"></i>
              <h3>CUSTOMER SUPPORT</h3>
             </div>
             
-           <div class="text2 col-xl-12 col-md-12 col-lg-12 col-sm-12">
+           <div class="text2 col-xl-12 col-md-12 col-lg-12 col-sm-12 p31">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa provident quibusdam id quam sit quisquam rem pariatur! Saepe veniam deleniti est tempora maxime, quam dolor esse temporibus natus dolores!</p>
            </div>
 
@@ -158,10 +168,10 @@
 
       <!-- collections start -->
      
-      <section class="container ">
+      <section class="container collections mb-5">
         <div class="row">
           <div data-aos="fade-right" class="col-xl-4 col-lg-4 col-md-4  text-center mb-5">
-            <div class="card" >
+            <div class="card card1" >
               <img src="WebSite pic\WebSite pic\women.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
               <div class="card-body">
                 <h3 class="card-text">Women Collections</h3>
@@ -170,7 +180,7 @@
           </div>
 
          <div data-aos="fade-right" class="col-xl-4 col-lg-4 col-md-4  text-center mb-5">
-          <div class="card" >
+          <div class="card card1" >
             <img src="WebSite pic\WebSite pic\children.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
             <div class="card-body">
               <h3 class="card-text">Kids Collection</h3>
@@ -179,7 +189,7 @@
           </div>
 
           <div data-aos="fade-right" class="col-xl-4 col-lg-4 col-md-4  text-center mb-5">
-            <div class="card" >
+            <div class="card card1" >
               <img src="WebSite pic\WebSite pic\men.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
               <div class="card-body">
                 <h3 class="card-text">Mens Collection</h3>
@@ -192,28 +202,162 @@
       <!-- collections end -->
 
 
+
+
       <!-- Featured Products start  -->
 
-      <section class="container">
+      <section class="container featured text-center mb-5">
         <div class="row">
-          <div class="title-1 col-xl-12 co-lg-12 col-sm-12 ">
+          <div class="title-1 fe-title col-xl-12 co-lg-12 col-sm-12  mt-5 mb-5">
             <h1>Featured Products</h1>
           </div>
 
-          <div>
-
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mb-5">
+            <div class="card feat-card" >
+              <img src="WebSite pic\WebSite pic\cloth_1.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+              <div class="card-body">
+                <h3 class="card-text">Tank Top</h3>
+                <p>Finding perfect t-shirt</p>
+                <p>$50</p>
+              </div>
+            </div>
           </div>
 
-          <div>
-
+         
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mb-5">
+            <div class="card feat-card" >
+              <img src="WebSite pic\WebSite pic\hero_1.png" class="card-img-top mb-4" alt="Sunset Over the Sea"/>
+              <div class="card-body ">
+                <h3 class="card-text">Tank Top</h3>
+                <p>Finding perfect t-shirt</p>
+                <p class="mr">$50</p>
+              </div>
+            </div>
           </div>
 
-          <div>
+          
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mb-5">
+            <div class="card feat-card" >
+              <img src="WebSite pic\WebSite pic\cloth_2.jpg" class="card-img-top" alt="Sunset Over the Sea"/>
+              <div class="card-body">
+                <h3 class="card-text">Tank Top</h3>
+                <p>Finding perfect t-shirt</p>
+                <p>$50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- featured products end -->
+
+      <!-- Big sale start -->
+
+      <section class="container text-center mb-5">
+        <div class="row">
+  
+          <div class="big-tit col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5 mt-5 title-1">
+            <h1 >Big Sale</h1>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="WebSite pic\WebSite pic\blog_1.jpg" class="d-block w-100" alt="Wild Landscape"/>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 sale-dt mt-5 align-content-center">
+            
+            <h1>50% less in all times</h1>
+
+            <p class="sp1">by <span>AmrElsherbiny </span> .september 3,2022</p>
+            <p class="sp3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi .</p>
+            <p class="sp4">atque dolore doloremque vel blanditiis aut explicabo, quos, ea possimus sit non ut id</p>
+            <p class="sp5">veritatis maxime soluta reprehenderit iste et consequatur</p>
+
+            <button>SHOP NOW</button>
 
           </div>
         </div>
       </section>
 
+      <!-- big sale end -->
+
+
+      <!-- footer start -->
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+           
+              <a href=" https://web.facebook.com/profile.php?id=100085240531782"
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+           
+           
+      
+            <!-- whatsapp -->
+            <a href=" https://api.whatsapp.com/send?phone=01101761785"
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0d5a07;"
+              href="#!"
+              role="button"
+              ><i class="fa-brands fa-whatsapp"></i>
+            </a>
+      
+            <!-- Google -->
+            <a href=" https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com&service=mail"
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a href=" https://www.instagram.com/amrelsherbiny20/"
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          
+            <!-- Github -->
+            <a href=" https://github.com/Amr-Elsherbiny88"
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white"href=" https://api.whatsapp.com/send?phone=01101761785">AmrElsherbiny</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <!-- footer end -->
 
 
 
@@ -241,9 +385,7 @@
 
 
 
-
-
-
+<script src="/js/script.js"></script>
 
     <!-- aos -->
 
