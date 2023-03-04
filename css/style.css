@@ -101,24 +101,6 @@
   
 }
 
-
-.text button {
-    background-color: purple;
-    color: white;
-    width: 100px;
-    height: 35px;    
-   border: purple;
-   border-radius: 5px; 
-   transition: all;
-}
-
-.text button:hover {
-    scale: 1.1;
-    transition: 0.2s;
-    background-color: rgb(100, 0, 128);
-   
-}
-
 /* intro end */
 
 
@@ -243,7 +225,7 @@
     color: purple;
 }
 
-.sale-dt button {
+.butt  {
     background-color: purple;
     border-radius: 5px;
     padding: 5px;
@@ -252,7 +234,7 @@
     transform: all;
 }
 
-.sale-dt button:hover {
+.butt:hover {
     transition: 0.5s;
     scale: 1.1;
 }
